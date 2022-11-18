@@ -20,6 +20,10 @@ public class SaleService {
 	
 	public Page<Sale> findSales(String minDate, String maxDate, Pageable pageable) {
 		
+		//
+		// http://localhost:8080/sales?minDate=2021-11-01&maxDate=2022-12-31
+		//
+		
 		LocalDate today = LocalDate.ofInstant(Instant.now(), ZoneId.systemDefault());
 		
 		LocalDate min = minDate.equals("") ? today.minusDays(365) : LocalDate.parse(minDate);
