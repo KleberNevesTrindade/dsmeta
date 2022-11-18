@@ -22,6 +22,7 @@ public class SaleService {
 		
 		//
 		// http://localhost:8080/sales?minDate=2021-11-01&maxDate=2022-12-31
+		// https://dsmeta-kleber.herokuapp.com/sales?minDate=2021-11-01&maxDate=2022-12-31
 		//
 		
 		LocalDate today = LocalDate.ofInstant(Instant.now(), ZoneId.systemDefault());
