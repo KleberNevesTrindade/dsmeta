@@ -22,7 +22,7 @@ function SalesCard() {
     useEffect(() => {
         axios.get(`${BASE_URL}/sales`)
             .then(response => { 
-                setSales(response.date.content);
+                setSales(response.data.content);
             })
     }, []);
 
@@ -65,8 +65,8 @@ function SalesCard() {
                     		return (
 				        <tr key={sale.id}>
 				            <td className="show992">{sale.id}</td>
-				            <td className="show576">{new Date(sale.date).toLocalDateString()}</td>
-				            <td>{sale.sallerName}</td>
+				            <td className="show576">{new Date(sale.date).toLocaleDateString()}</td>
+				            <td>{sale.sellerName}</td>
 				            <td className="show992">{sale.visited}</td>
 				            <td className="show992">{sale.deals}</td>
 				            <td>R$ {sale.amount.toFixed(2)}</td>

@@ -1,4 +1,4 @@
-export type sale {
+export type Sale {
         id: number;
         sellerName: string;
         date: string;
@@ -6,7 +6,5 @@ export type sale {
         deals: number;
         amount: number;
     }
-
-
 }
 
