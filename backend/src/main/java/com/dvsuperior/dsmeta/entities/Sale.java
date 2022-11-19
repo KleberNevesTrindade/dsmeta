@@ -73,6 +73,4 @@ public class Sale {
 		this.date = date;
 	}
 	
-	
-	
 }
